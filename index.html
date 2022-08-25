@@ -9,20 +9,17 @@
     
     <body >
         
-       <div id="masthead">
+       <div id="header">
             <div class="left">
                 <div id="toggle">
-                    <i class="button"></i>
+                    <i class="button" onclick="toggle()"; ></i>
                 </div>
                 
             </div>
 
-            <div class="center">
-                <h1 style="flex: 1;">申</h1>
-                <h1 style="flex: 1;">請</h1>
-                <h1 style="flex: 1;">書</h1>
-
-            </div>
+            <h1 id="title">
+                申&emsp;請&emsp;書
+            </h1>
 
             <div class="right">
                 <h2>WeHelp</h2>
@@ -30,29 +27,20 @@
             </div>
        </div>
        
-       <div class="ui-view-area">
-            <div class="questions">
-                <div class="rectangle"></div>
+       <div class="main">
+            <div class="questions" >
                 <h3>個人簡介</h3>
             </div>
             <div class="answer">
                 <i>
                     我叫陳群嶧，
-                    今年31歲，
-                    在印刷工廠擔任生產作業員。
-                    由於想要改善財富，
-                    因而投入股票市場，
-                    發現目前到未來脫離不了3種語言：
-                    中文、英文、程式語言。
-                    
-
+                    1991年生。
                 </i>
             </div>
        </div>
        
-       <div class="ui-view-area">
+       <div class="main">
             <div class="questions">
-                <div class="rectangle"></div>
                 <h3>為了成為軟體工程師，曾做過什麼努力？若有具體專案作品請分享給我們</h3>
             </div>
             <div class="answer">
@@ -63,31 +51,26 @@
                     於是從圖書館借了出來，
                     但幾乎每一頁都有生字要google，
                     30天借閱到期，
-                    後面又接著有人要借，
-                    閱讀的時間成本很高，
-                    之後以彭彭的YouTube影片為主，
-                    相較文字，
-                    有畫面更適合我學習，
-                    也比較沒那麼打擊。
+                    後面緊接著有人要借，
+                    閱讀時間成本很高，
+                    之後以YouTube影片為主，
+                    有畫面比純文字更適合我學習，
+                    打擊也不至於太大。
 
                 </i>
-                <div class="pic">
-                    <img src="wehelp借閱書單-01.png" width="100px"/>
-                </div>
+                
             </div>
             <div class="answer">
                 <i>
-                    我還沒有實際的專案作品，
-                    這份申請書，
-                    是我第一次使用html、css做出網頁。
+                    我沒有實際的專案作品，
+                    這份申請書是我第一次使用html、css、js做出網頁。
                     
                 </i>
             </div>
        </div>
        
-       <div class="ui-view-area">
+       <div class="main">
             <div class="questions">
-                <div class="rectangle"></div>
                 <h3>如果參與這個計畫，會怎麼安排學習時間？</h3>
             </div>
             <div class="answer">
@@ -99,27 +82,35 @@
                     全職投入Bootcamp。
                     
                 </i>
-                
+                    
             </div>
+            <div class="answer">
+                <i>
+                    做這份申請書的期間，
+                    除了睡覺、工作、外食，
+                    我幾乎都投入在寫程式跟找尋如何解決問題的脈絡中，
+                    把這段日子，
+                    當作測試自己能不能接受這樣的每一天。
+                
+                </i>
+            </div>
+            
        </div>
        
-       <div class="ui-view-area">
+       <div class="main">
             <div class="questions">
-                <div class="rectangle"></div>
                 <h3>是否有想要加入的軟體公司？為什麼想加入該公司？</h3>
             </div>
             <div class="answer">
                 <i>
-                    最近從新聞得知，
-
+                   
                 </i>
             </div>
        </div>
        
        
-       <div class="ui-view-area">
+       <div class="main">
             <div class="questions">
-                <div class="rectangle"></div>
                 <h3>請描述一件你曾經碰到最困難的事情，如何克服？</h3>
             </div>
             <div class="answer" >
@@ -191,35 +182,46 @@
             </div>
        </div>
        
-       <div class="ui-view-area">
+       <div class="main">
             <div class="questions">
-                <div class="rectangle"></div>
                 <h3>關於這份申請網頁，請分享一個你開發時的技術心得。</h3>
             </div>
             <div class="answer">
                 <i>
-
+                    肯定要聊聊左上角的"toggle button"，
+                    多數網頁只會有一種底色"白色"，
+                    在瀏覽時，
+                    我的眼睛會閃到很不舒服，
+                    所以這份申請書才會把底色設計成深色，
+                    但說不定也只是我一廂情願，
+                    於是就開始研究要怎麼做切換，
+                    過程折磨不少，
+                    同時收穫也很多。
+                </i>
+            </div>
+            <div class="answer">
+                <i>
+                    寫程式友善的地方是能夠接受好幾回失敗、再測試、
+                    接著失敗再測試...，
+                    我想軟體工程就是不斷這樣重複，
+                    但只要成功一次的過程。
                 </i>
             </div>
        </div>
        
-       <div class="ui-view-area">
+       <div class="main">
             <div class="questions">
-                <div class="rectangle"></div>
                 <h3>其他想要對我們說的事情？</h3>
             </div>
             <div class="answer">
                 <i>
-                    7月30日這天我在臉書上看到"彭彭學院"一則分享，
-                    是關於"Wehelp Bootcamp"招生資訊，
-                    當下的心情很像小時候，
-                    第一次到補習班的感覺，
-                    緊張到很想吐。
+                    
 
                     
                 </i>
             </div>
        </div>
+       <footer></footer>
        
        <script src="toggle.js"></script>
     </body>

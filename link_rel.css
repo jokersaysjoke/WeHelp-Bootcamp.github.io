@@ -4,15 +4,15 @@ body{
     line-height:39px;
     letter-spacing: 2px;
     background-color: #292F33;
-    color: #fff;
+    color: #ccc;
     transition: 0.5s;
 }
-body.normal{
+body.light{
     background-color: #ffeead;
     color: #292F33;
     border: #292F33;
 }
-#masthead{
+#header{
     display: flex;
     position: relative;
     height: 120px;
@@ -37,7 +37,7 @@ body.normal{
     height: 30px;
     border-radius: 50px;
     background-color: #ffeead;
-
+    cursor: pointer;
 }
 #toggle .button{
     position: absolute;
@@ -49,18 +49,19 @@ body.normal{
     border-radius: 50%;
     transform: scale(0.7);
     transition: 0.5s;
+    
 
 }
-#toggle.normal .button{
+#toggle.light .button{
     background-color: #ffeead;
     left: 40px;
     transition: 0.5s;
 }
-#toggle.normal{
+#toggle.light{
     background-color: #292F33;
     transition: 0.66s;
 }
-.center{
+h1{
     display: flex;
     flex: 1;
     color:#ffeead;
@@ -71,6 +72,9 @@ body.normal{
     text-align: center;
     
 }
+h1.light{
+    color: #292F33;
+}
 .right{
     flex: 1;
     width: 280px;
@@ -80,27 +84,26 @@ body.normal{
     text-align: right;
     line-height: 22px;
 }
-.ui-view-area{
+.main{
     width: 1000px;
     margin-left: auto;
     margin-right: auto;
     position: relative;
 }
-.questions{
-    border-bottom: 0.5px solid #ffeead;
-    position: relative;
+h3{
+    color: #ffeead;
 }
-.rectangle{
-    background-color: #ffeead;
-    position: absolute;
-    bottom: -7px;
-    width: 44px;
-    height: 7px;
+h3.light{
+    color: #292F33;
 }
+
 .answer{
     margin-top: 22px;
     margin-left:22px;
     margin-right:22px;
     padding-bottom:27px;
     word-break: break-word;
+}
+footer{
+    height: 22px;
 }
