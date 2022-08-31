@@ -1,6 +1,6 @@
 const button = document.getElementById("toggle");
 const body = document.querySelector("body");
-
+const a = document.getElementsByClassName
 
 
 button.onclick=function(){
@@ -8,6 +8,3 @@ button.onclick=function(){
     body.classList.toggle('light');
 }
 
-mediumZoom('.zoom',{
-    margin: 50
-})
